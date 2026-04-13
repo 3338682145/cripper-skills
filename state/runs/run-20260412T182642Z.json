@@ -1,0 +1,18 @@
+{
+  "run_id": "run-20260412T182642Z",
+  "source_id": "example-web-source",
+  "job_id": null,
+  "trigger": "manual",
+  "status": "failed",
+  "started_at": "2026-04-12T18:26:42Z",
+  "completed_at": "2026-04-12T18:26:43Z",
+  "created_assets": [],
+  "deduped_assets": [],
+  "failed_items": [
+    {
+      "url": "https://example.com/",
+      "error": "HTTPSConnectionPool(host='example.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))"
+    }
+  ],
+  "skipped_items": []
+}

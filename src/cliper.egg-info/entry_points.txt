@@ -1,0 +1,5 @@
+[console_scripts]
+cliper = cliper.cli:main
+source-intake = cliper_source_intake.intake_url:main
+source-intake-cron = cliper_source_intake.cron_drain_queue:main
+source-intake-wizard = cliper_source_intake.wizard:main

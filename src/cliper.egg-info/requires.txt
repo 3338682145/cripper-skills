@@ -1,0 +1,11 @@
+beautifulsoup4<5,>=4.12
+lxml<6,>=5.3
+markdownify<2,>=1.1
+pydantic<3,>=2.11
+PyYAML<7,>=6.0
+readability-lxml<1,>=0.8.1
+requests<3,>=2.32
+typer<1,>=0.16
+
+[dev]
+pytest<9,>=8.3

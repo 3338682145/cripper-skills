@@ -1,0 +1,23 @@
+name: ingestion-source
+schema_version: 1.0.0
+required:
+  - schema
+  - schema_version
+  - source_id
+  - display_name
+  - status
+  - source_kind
+  - adapter
+  - seed_urls
+  - allowed_domains
+  - discovery_mode
+  - default_topics
+  - schedule
+  - owner
+  - validation_profile
+status_values: [active, paused, deprecated]
+source_kind_values: [web_url]
+adapter_values: [web_url]
+discovery_mode_values: [seed_urls]
+body_contract: Human notes about source intent, trust caveats, and operating guidance.
+

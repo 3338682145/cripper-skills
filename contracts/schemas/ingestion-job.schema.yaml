@@ -1,0 +1,17 @@
+name: ingestion-job
+schema_version: 1.0.0
+required:
+  - schema
+  - schema_version
+  - job_id
+  - source_id
+  - trigger
+  - cadence
+  - max_items
+  - fetch_budget
+  - retry_policy
+  - write_targets
+  - dossier_policy
+trigger_values: [manual, scheduled]
+body_contract: Human notes about how and why the job should run.
+

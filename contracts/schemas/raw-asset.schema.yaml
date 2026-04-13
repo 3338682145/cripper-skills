@@ -1,0 +1,22 @@
+name: raw-asset
+schema_version: 1.0.0
+required:
+  - schema
+  - schema_version
+  - asset_id
+  - source_id
+  - run_id
+  - source_kind
+  - adapter
+  - canonical_url
+  - retrieved_at
+  - language
+  - content_hash
+  - dedupe_key
+  - status
+  - provenance
+  - refs
+status_values: [ingested, deduped, invalid]
+provenance_fields: [fetch_method, fetch_url, resolved_url, extractor, extractor_version]
+ref_fields: [registry_source, run_manifest, registry_job, source_snapshot]
+body_contract: Cleaned source Markdown only. No summaries, wiki linking, or publishing annotations.

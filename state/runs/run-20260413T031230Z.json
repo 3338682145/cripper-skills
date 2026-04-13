@@ -1,0 +1,15 @@
+{
+  "run_id": "run-20260413T031230Z",
+  "source_id": "hermes-docs-profiles",
+  "job_id": "hermes-docs-profiles-default",
+  "trigger": "manual",
+  "status": "completed",
+  "started_at": "2026-04-13T03:12:30Z",
+  "completed_at": "2026-04-13T03:12:30Z",
+  "created_assets": [
+    "content/raw/2026/04/13/hermes-docs-profiles/16d0e3ad7f60d07f.md"
+  ],
+  "deduped_assets": [],
+  "failed_items": [],
+  "skipped_items": []
+}

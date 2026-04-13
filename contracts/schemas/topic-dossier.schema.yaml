@@ -1,0 +1,24 @@
+name: topic-dossier
+schema_version: 1.0.0
+required:
+  - schema
+  - schema_version
+  - dossier_id
+  - topic_slug
+  - title
+  - snapshot_at
+  - status
+  - readiness_score
+  - readiness_level
+  - summary
+  - source_refs
+  - claim_count
+  - source_diversity
+  - lineage
+  - handoff
+status_values: [draft, reviewing, ready]
+readiness_level_values: [low, medium, high]
+lineage_fields: [derived_from_assets, previous_snapshot]
+handoff_fields: [brief, angles, audience, priority]
+body_sections: [Overview, Key Facts, Evidence, Open Questions, Output Hooks]
+milestone_note: Contract only in Milestone 1A. Builder is intentionally deferred.

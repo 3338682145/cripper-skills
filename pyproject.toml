@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cliper"
+version = "0.1.0"
+description = "Contract-first ingestion spine for the Hermes multi-agent content system."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "beautifulsoup4>=4.12,<5",
+  "lxml>=5.3,<6",
+  "markdownify>=1.1,<2",
+  "pydantic>=2.11,<3",
+  "PyYAML>=6.0,<7",
+  "readability-lxml>=0.8.1,<1",
+  "requests>=2.32,<3",
+  "typer>=0.16,<1",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3,<9",
+]
+
+[project.scripts]
+cliper = "cliper.cli:main"
+source-intake = "cliper_source_intake.intake_url:main"
+source-intake-cron = "cliper_source_intake.cron_drain_queue:main"
+source-intake-wizard = "cliper_source_intake.wizard:main"
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-p no:cacheprovider"
