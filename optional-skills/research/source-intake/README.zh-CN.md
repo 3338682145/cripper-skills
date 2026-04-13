@@ -8,6 +8,8 @@
 如果只是想让 Hermes、Codex 或其他支持“技能目录”的 agent 识别并使用这个 skill，只安装 skill 目录就够了。
 如果还想直接在终端里运行 `source-intake`、`source-intake-cron`、`source-intake-wizard`，还需要额外安装 `cliper` 这个 Python 包。
 
+如果你想一条命令同时装好 skill 和 runtime，直接用 `install-runtime.ps1`。
+
 运行链路保持不变：
 
 `classify -> native/Firecrawl/MinerU -> normalize -> verify -> route`
@@ -119,6 +121,32 @@ source-intake "https://example.com/post" \
 其余选填项都可以直接回车留空，向导会自动忽略这些参数。
 
 ## 如何安装到 Agent 的技能目录
+
+一键安装 skill + runtime：
+
+```powershell
+.\optional-skills\research\source-intake\install-runtime.ps1 -InstallRoot "D:\agent\skills"
+```
+
+Windows 双击入口：
+
+```powershell
+.\optional-skills\research\source-intake\install-runtime.cmd
+```
+
+从 GitHub 一键安装 skill + runtime：
+
+```powershell
+Invoke-WebRequest https://raw.githubusercontent.com/3338682145/cripper-skills/main/optional-skills/research/source-intake/install-runtime.ps1 -OutFile .\install-runtime.ps1
+.\install-runtime.ps1 -InstallRoot "D:\agent\skills"
+```
+
+这个脚本会做两件事：
+
+- 把 `source-intake` skill 装进你指定的 agent 技能目录
+- 用 `pip` 安装 `cliper` runtime，这样本地就能执行 `source-intake` 系列命令
+
+运行前需要本机有 Python 和 pip。
 
 通用安装方式，适用于任意 agent 技能目录：
 

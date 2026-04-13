@@ -8,6 +8,8 @@
 For Hermes, Codex, or any other agent that loads skills from a folder, the skill folder is enough.
 For terminal commands like `source-intake`, `source-intake-cron`, and `source-intake-wizard`, you also need the `cliper` Python package installed.
 
+If you want both in one step, use `install-runtime.ps1`.
+
 The runtime path stays the same:
 
 `classify -> native/Firecrawl/MinerU -> normalize -> verify -> route`
@@ -119,6 +121,32 @@ The wizard enforces required fields:
 Optional fields can be left blank in the wizard and will simply be omitted from the generated command.
 
 ## Install Into An Agent Skill Directory
+
+One-click install for both skill + runtime:
+
+```powershell
+.\optional-skills\research\source-intake\install-runtime.ps1 -InstallRoot "D:\agent\skills"
+```
+
+Windows double-click wrapper:
+
+```powershell
+.\optional-skills\research\source-intake\install-runtime.cmd
+```
+
+One-click install directly from GitHub:
+
+```powershell
+Invoke-WebRequest https://raw.githubusercontent.com/3338682145/cripper-skills/main/optional-skills/research/source-intake/install-runtime.ps1 -OutFile .\install-runtime.ps1
+.\install-runtime.ps1 -InstallRoot "D:\agent\skills"
+```
+
+This script does two things:
+
+- installs the `source-intake` skill files into your chosen agent skill directory
+- installs the `cliper` runtime with `pip` so local `source-intake` commands work immediately
+
+Python and pip need to be available on the machine before you run it.
 
 Generic install into any agent skill directory:
 

@@ -88,6 +88,7 @@ The `source-intake` skill is the intake layer for durable source material. It ac
 4. Invoke it in your agent by referencing `source-intake`
 5. Or run `install-skill.ps1` to install into any agent skill directory
 6. `install-to-codex.ps1` / `install-to-codex.cmd` are just Codex convenience wrappers
+7. Use `install-runtime.ps1` if you want skill files plus executable runtime in one step
 
 ## Operating Rules
 
