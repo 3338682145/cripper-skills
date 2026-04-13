@@ -1,0 +1,11 @@
+{
+  "verdict": "AUTO_PASS",
+  "confidence": 0.92,
+  "signal_level": "high",
+  "reason_codes": [
+    "native_complete"
+  ],
+  "summary": "Phase 2 baseline routing without final verifier implementation.",
+  "suggested_topic": null,
+  "suggested_kind": "blog"
+}

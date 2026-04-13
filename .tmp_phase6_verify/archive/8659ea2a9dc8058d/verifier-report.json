@@ -1,0 +1,12 @@
+{
+  "verdict": "UNSUPPORTED",
+  "confidence": 0.1,
+  "signal_level": "low",
+  "reason_codes": [
+    "github_placeholder",
+    "github_v1_deferred"
+  ],
+  "summary": "GitHub ingestion is intentionally unsupported in v1. The verifier remains a routing gate only.",
+  "suggested_topic": "github-placeholder",
+  "suggested_kind": null
+}

@@ -80,12 +80,12 @@ The `source-intake` skill is the intake layer for durable source material. It ac
 - `README.md` - packaging and direct-call guide in English
 - `README.zh-CN.md` - packaging and direct-call guide in Simplified Chinese
 
-## Install As An Agent Skill
+## Install As A Codex Skill
 
-1. Copy this whole folder into your agent's skill root as `source-intake`
+1. Copy this whole folder to `%USERPROFILE%\.codex\skills\source-intake\`
 2. Keep `SKILL.md` at the root of the copied folder
 3. Keep the `references/` folder next to it
-4. Invoke it in your agent by referencing `source-intake`
+4. Invoke it in Codex by referencing `source-intake`
 5. Or run `install-skill.ps1` to install into any agent skill directory
 6. `install-to-codex.ps1` / `install-to-codex.cmd` are just Codex convenience wrappers
 
